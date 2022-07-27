@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+}
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vw;
+  width: fit-content;
+  max-width: 230px;
+}
+.form-container > form > a {
+  text-decoration: none;
+}
+.primary {
+  /* color: #1976d2; */
+}
+.pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pass > span {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.progress {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.mainDiv {
+  background-color: #1976d2;
+  height: 100vh;
+} */
+.contact-header > img {
+  width: 50px;
+  height: 50px;
+}
+.contact-header {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  user-select: none;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+h5 {
+  text-decoration: none;
+}
+
+.profilePictureUpload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 3vh;
+}
+
+.upload-input {
+  width: 2vw;
+  visibility: hidden;
+}
+.profile-manager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin-left: 40vw;
+  max-width: 350px;
+}
+.profile-manager > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
